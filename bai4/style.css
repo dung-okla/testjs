@@ -1,0 +1,91 @@
+.form-subscribe {
+    margin: auto;
+    background-color: rgb(6, 52, 52);
+    padding: 20px 0px 20px 50px;
+    color: white;
+}
+
+.earn-income {
+    color: rgb(234, 152, 12);
+}
+
+input {
+    height: 30px;
+
+}
+
+button {
+    height: 36px;
+    background-color: yellow;
+}
+
+div:hover>form>input::placeholder {
+    color: rgb(234, 152, 12);
+
+}
+
+.form-subscribe:hover>form>input {
+    background-color: #ddd;
+}
+
+.form-subscribe:hover>form>button {
+    background-color: rgb(234, 152, 12);
+    color: #fff;
+}
+
+
+.custom-blackquote {
+    width: 500px;
+    padding: 50px;
+    position: relative;
+    margin: auto;
+
+}
+
+.top {
+    position: absolute;
+    width: 50px;
+    left: 0px;
+    top: 0px;
+}
+
+.bottom {
+    position: absolute;
+    width: 50px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.custom-list {
+    width: 200px;
+    margin: auto;
+}
+
+ul li::before {
+    content: attr(data-icon);
+}
+
+ul {
+    list-style: none;
+    font-size: 30px;
+}
+
+.html {
+    width: 900px;
+    padding: 50px;
+    margin: auto;
+}
+
+a {
+    color: blue;
+}
+
+.map {
+    background-color: #ddd;
+}
+
+.border {
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
