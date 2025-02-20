@@ -89,3 +89,10 @@ a {
     border: 1px solid black;
     border-radius: 20px;
 }
+
+input[value="red"]:checked ~h2{
+    color: red;
+}
+input[value="green"]:checked ~h2{
+    color: green;
+}
