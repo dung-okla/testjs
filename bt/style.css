@@ -99,3 +99,10 @@ h3{
 .heart::after{
     content: "❤️";
 }
+.red-color{
+    color: red;
+}
+.text{
+    text-decoration: line-through;
+    color: black;
+}
