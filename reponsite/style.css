@@ -33,16 +33,7 @@ ul>li{
         }
     }
     
-    @keyframes slideOut {
-        from {
-            left: 0;
-            opacity: 1;
-        }
-        to {
-            left: -100%;
-            opacity: 0;
-        }
-    }
+   
     .dp-block{
         display: block;
     }
@@ -57,13 +48,14 @@ ul>li{
        bottom: 0;
        background-color: red;
        align-content: flex-start;
+       opacity: 0;
     }
     input:checked ~ .menu{
         left: 0;
         animation: slideIn 0.5s forwards;
     }
     input:not(:checked) ~ .menu{
-        animation: slideOut 0.5s forwards;
+        display: none;
     }
    
 }
