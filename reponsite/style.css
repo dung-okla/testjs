@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.dp-none{
+    display: none;
+}
+.dp-flex{
+    display: flex;
+    justify-content: space-around;
+   align-content: center;
+   align-items: center;
+}
+ul>li{
+  list-style: none;
+  padding: 10px;
+ 
+ 
+  margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+    @keyframes slideIn {
+        from {
+            left: -100%;
+            opacity: 0;
+        }
+        to {
+            left: 0;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideOut {
+        from {
+            left: 0;
+            opacity: 1;
+        }
+        to {
+            left: -100%;
+            opacity: 0;
+        }
+    }
+    .dp-block{
+        display: block;
+    }
+    input{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        width: 50%;
+        left: -100%;
+        top: 0;
+       bottom: 0;
+       background-color: red;
+       align-content: flex-start;
+    }
+    input:checked ~ .menu{
+        left: 0;
+        animation: slideIn 0.5s forwards;
+    }
+    input:not(:checked) ~ .menu{
+        animation: slideOut 0.5s forwards;
+    }
+   
+}
