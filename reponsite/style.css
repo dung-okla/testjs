@@ -49,13 +49,13 @@ ul>li{
        background-color: red;
        align-content: flex-start;
        opacity: 0;
+       display: none;
     }
     input:checked ~ .menu{
+        display: block;
         left: 0;
         animation: slideIn 0.5s forwards;
     }
-    input:not(:checked) ~ .menu{
-        display: none;
-    }
+  
    
 }
