@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--                                                                                                                                               
+                                                                                                                                              
+                                                                                                                                              
+                                                                                                                                              
+                                                                                                                                              
+                                                                                                                                              
+                                               header                                                                                         
+           ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐             
+           │                                                                                                                    │             
+           │                                                                                                                    │             
+           │                                                                                                                    │             
+           │ ┌─────────────────┐            ┌────────────────────────────────┐                 ┌───────────────────────────────┐│             
+           │ │                 │            │                                │                 │                               ││             
+           │ │ header-logo     │            │   header-seach                 │                 │                               ││             
+           │ │                 │            │                                │                 │   header-accound              ││             
+           │ │                 │            │                                │                 │                               ││             
+           │ │                 │            │                                │                 │                               ││             
+           │ └─────────────────┘            └────────────────────────────────┘                 └───────────────────────────────┘│             
+           │                                                                                                                    │             
+           │                                                                                                                    │             
+           │                                                                                                                    │             
+           │                                                                                                                    │             
+           └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘             
+           ┌────────────────────────────────────────────────┐                                                                                 
+           │                                                │                                                                                 
+           │           side-bar                             │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │   ┌───────────────────────────────────────┐    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │    side-bar-items                     │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   └───────────────────────────────────────┘    │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │   ┌───────────────────────────────────────┐    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │    side-bar- items                    │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   │                                       │    │                                                                                 
+           │   └───────────────────────────────────────┘    │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │    ┌──────────────────────────────────────┐    │                                                                                 
+           │    │                                      │    │                                                                                 
+           │    │ side-bar--items                      │    │                                                                                 
+           │    │                                      │    │                                                                                 
+           │    │                                      │    │                                                                                 
+           │    │                                      │    │                                                                                 
+           │    │                                      │    │                                                                                 
+           │    │                                      │    │                                                                                 
+           │    │                                      │    │                                                                                 
+           │    └──────────────────────────────────────┘    │                                                                                 
+           │                                                │                                                                                 
+           │   ┌──────────────────────────────────────┐     │                                                                                 
+           │   │                                      │     │                                                                                 
+           │   │    side-bar-items                    │     │                                                                                 
+           │   │                                      │     │                                                                                 
+           │   │                                      │     │                                                                                 
+           │   │                                      │     │                                                                                 
+           │   │                                      │     │                                                                                 
+           │   │                                      │     │                                                                                 
+           │   │                                      │     │                                                                                 
+           │   │                                      │     │                                                                                 
+           │   │                                      │     │                                                                                 
+           │   │                                      │     │                                                                                 
+           │   └──────────────────────────────────────┘     │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           │                                                │                                                                                 
+           └────────────────────────────────────────────────┘                                                                                 
+ 
+        -->
+    <div class="header dp-flex">
+        <div class="header-logo dp-flex grow-1 ">
+
+
+            <label class="mdi mdi-menu logo hover" for="menu"></label>
+            <span class="mdi mdi-youtube red-color "></span>
+            <span class="">You tube</span>
+
+        </div>
+        <div class="header-seach">
+            <form action="" class="form ">
+                <input type="search" placeholder="seach">
+                <button class="mdi mdi-search-web ">
+                </button>
+                <span class="mdi mdi-microphone logo hover"></span>
+            </form>
+
+        </div>
+        <div class="header-accound dp-flex ">
+            <div class="header-accound-create ">
+                <input type="checkbox" id="create">
+
+                <label for="create">Create</label>
+                <div class="create-dow">
+                    <div class="create-dow-items">
+                        <span>Upload video</span>
+                    </div>
+                    <div class="create-dow-items">
+                        <span>Go live</span>
+                    </div>
+                    <div class="create-dow-items">
+                        <span>Create post</span>
+                    </div>
+                </div>
+            </div>
+
+            <span class="mdi mdi-bell logo hover"></span>
+            <span class="mdi mdi-account logo hover"></span>
+
+        </div>
+    </div>
+    <input type="checkbox" id="menu">
+
+    <div class="side-bar">
+        <div class="side-bar-items hover  menu-flex">
+            <span class="mdi mdi-home"></span>
+            <br>
+            <span class="text">home</span>
+        </div>
+
+        <div class="side-bar-items hover menu-flex">
+            <span class="mdi mdi-shore"></span>
+            <br>
+            <span class="text">Shorts</span>
+        </div>
+        <div class="side-bar-items hover menu-flex">
+            <span class="mdi mdi-youtube-subscription"></span>
+            <br>
+            <span class="text">Subscription</span>
+        </div>
+        <div class="side-bar-items hover menu-none">
+            <span class="mdi mdi-account"></span>
+            <br>
+            <span>You</span>
+        </div>
+        <div class="border  dp-none dp-block"></div>
+    
+
+        <h3 class=" dp-none dp-block">You <span>></span></h3>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-history"></span>
+            <br>
+            <span class="text">History</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-playlist-play"></span>
+            <br>
+            <span class="text">Playlists</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-video"></span>
+            <br>
+            <span class="text">You videos</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-history"></span>
+            <br>
+            <span class="text">Watch laster</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-emoticon-kiss-outline"></span>
+            <br>
+            <span class="text">Like Video</span>
+        </div>
+        <div class="border  dp-none dp-block"></div>
+
+<h3 class="dp-none dp-block"> Subscription</h3>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-youtube-subscription"></span>
+    <br>
+    <span class="text">f8-1</span>
+</div>   <div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-facebook"></span>
+    <br>
+    <span class="text">f8-2</span>
+</div>   <div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-facebook"></span>
+    <br>
+    <span class="text">f8-3</span>
+</div>   <div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-facebook"></span>
+    <br>
+    <span class="text">f8-4</span>
+</div>   <div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-facebook"></span>
+    <br>
+    <span class="text">f8-5</span>
+</div>
+
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-menu"></span>
+    <br>
+    <span class="text">All Subscription
+    </span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-menu-down"></span>
+    <br>
+    <span class="text">Show more</span>
+</div>
+<div class="border  dp-none dp-block"></div>
+
+  <h3 class="dp-none dp-block">Explore</h3>
+  <div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-fire"></span>
+    <br>
+    <span class="text">Trending</span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-music"></span>
+    <br>
+    <span class="text">Music</span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-youtube-gaming"></span>
+    <br>
+    <span class="text">Gaming</span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-newspaper"></span>
+    <br>
+    <span class="text">New</span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-trophy"></span>
+    <br>
+    <span class="text">Sport</span>
+</div>
+<div class="border  dp-none dp-block"></div>
+
+<h3 class="dp-none dp-block">More Youtube</h3>
+
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-youtube red-color"></span>
+    <br>
+    <span class="text">Youtube prime</span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-youtube red-color"></span>
+    <br>
+    <span class="text">Youtube studio</span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-youtube red-color"></span>
+    <br>
+    <span class="text">Youtube music</span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-youtube red-color"></span>
+    <br>
+    <span class="text">Youtube kids</span>
+</div>
+<div class="border  dp-none dp-block"></div>
+
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-youtube-studio "></span>
+    <br>
+    <span class="text">Seting</span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-flag"></span>
+    <br>
+    <span class="text">Repost History</span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-help-circle"></span>
+    <br>
+    <span class="text">help</span>
+</div>
+<div class="side-bar-items hover dp-none menu-flex">
+    <span class="mdi mdi-message-alert"></span>
+    <br>
+    <span class="text">Send feedback</span>
+</div>
+    </div>
+ 
+    <div class="dilalog " style="display: inline-block; width: 80%; text-align: center;">
+        <h1 >dialog</h1>
+        <br>
+        <label for="close" class="btn">onclick</label>
+     
+        <input type="checkbox" id="close">
+        <div class="body-dialog">
+            <div class="dialog-content">
+
+                <h2>dialog </h2><label for="close" class="close">x</label>
+                <form action="">
+                    <input type="text" class="ntn">
+                    <span  class="label-input">name</span>
+                    <br><br>
+                    <input type="text" class="ntn">
+                    <span  class="label-input">email</span>
+                    <br>
+                    <button class="btn">gửi</button>
+                    
+                </form>
+                <label for="close" class="full"></label>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

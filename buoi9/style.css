@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.side-bar{
+    width: 250px;
+    background-color: rgb(28, 36, 52);
+    height: 100vh;
+    color: white;
+}
+.side-bar__header{
+    display: flex;
+    padding: 16px;
+}
+.side-bar .logo{
+    font-size: 32px;
+}
+.side-bar__item{
+    display: flex;
+    padding: 16px;
+   
+}
+.side-bar__header h1{
+    margin-left: 16px;
+}
+.side-bar__item span:first-child{
+    margin: 0 8px 0 16px;
+}
+.side-bar__item:hover{
+    background-color: rgb(13, 16, 16);
+    cursor: pointer;
+}
+.side-bar__item:nth-child(4){
+    display: block;
+    /* justify-content: space-between; */
+}
+.side-bar__item:nth-child(4) > div{
+    display: flex;
+    justify-content: space-between;
+}
+.side-bar__item__child_item{
+    padding: 16px;
+}
+.side-bar__item:nth-child(4)>div+div{
+    display: none;
+}
+.container{
+    display: flex;
+}
+.body-container{
+    width: calc(100% - 250px);
+    text-align: center;
+}
+.table-header{
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+}
+.table-header-cell:nth-child(2){
+    flex-grow: 1;
+}
+.table-header-cell:nth-child(3){
+    flex-grow: 1;
+}
+.table-body{
+    display: flex;
+}
+.edit-btn{
+    background-color: green;
+    padding: 10px;
+}
+.delete-btn{
+    background-color: brown;
+    padding: 10px;
+}
