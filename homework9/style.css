@@ -373,16 +373,12 @@ h3 {
     padding: 10px;
 }
 
-.product-logo>img {
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-    height: 200px;
-}
+
 
 .product-logo {
     background-image: url("https://i.ytimg.com/vi/tr78RDhSeIY/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBJd5TksuxgB_RJzX2F1y9XYat8jw");
-    width: 100%;
+   height: 200px;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -619,7 +615,7 @@ justify-content: space-between;
 .video-product{
    max-width: 40%;
 }
-.product-logo{
+.video-items .product-logo{
     min-width: 30%;
     width: auto;
     height: auto;
