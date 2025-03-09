@@ -74,3 +74,12 @@
     background-color: brown;
     padding: 10px;
 }
+.opition input{
+    padding: 10px;
+}
+.opition{
+    position: relative;
+}
+.opition span{
+    position: absolute;
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        overflow: auto;
+    }
+</style>
+<body>
+    <div class="header dp-flex ">
+        <div class="header-logo dp-flex grow-1 ">
+
+
+            <label class="mdi mdi-menu logo hover" for="menu"></label>
+            <span class="logo-youtube">
+                <img src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo-2015-2017.png" alt="">
+            </span>
+
+
+        </div>
+        <div class="header-seach">
+            <form action="" class="form ">
+                <input type="search" placeholder="seach">
+                <button class="mdi mdi-search-web hover">
+                </button>
+                <span class="mdi mdi-microphone logo hover"></span>
+            </form>
+
+        </div>
+        <div class="header-accound dp-flex grow-1 ">
+            <div class="header-accound-create ">
+                <input type="checkbox" id="create">
+
+                <label for="create">Create</label>
+                <div class="create-dow">
+                    <div class="create-dow-items">
+                        <span>Upload video</span>
+                    </div>
+                    <div class="create-dow-items">
+                        <span>Go live</span>
+                    </div>
+                    <div class="create-dow-items">
+                        <span>Create post</span>
+                    </div>
+                </div>
+            </div>
+
+            <span class="mdi mdi-bell logo hover"></span>
+            <span class="mdi mdi-account logo hover"></span>
+
+        </div>
+    </div>
+    <input type="checkbox" id="menu">
+    <label class="shadow-menu video-shadow" for="menu"></label>
+    <div class="side-bar tablet-position-absolute mobie-none video-absolute">
+        <div class="side-bar-items hover  menu-flex ">
+            <span class="mdi mdi-home"></span>
+            <br>
+            <span class="text">home</span>
+        </div>
+
+        <div class="side-bar-items hover menu-flex ">
+            <span class="mdi mdi-shore"></span>
+            <br>
+            <span class="text">Shorts</span>
+        </div>
+        <div class="side-bar-items hover menu-flex ">
+            <span class="mdi mdi-youtube-subscription"></span>
+            <br>
+            <span class="text">Subscription</span>
+        </div>
+        <div class="side-bar-items hover menu-none ">
+            <span class="mdi mdi-account"></span>
+            <br>
+            <span>You</span>
+        </div>
+        <div class="border  dp-none dp-block"></div>
+
+
+        <h3 class=" dp-none dp-block">You <span>></span></h3>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-history"></span>
+            <br>
+            <span class="text">History</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-playlist-play"></span>
+            <br>
+            <span class="text">Playlists</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-video"></span>
+            <br>
+            <span class="text">You videos</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-history"></span>
+            <br>
+            <span class="text">Watch laster</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-emoticon-kiss-outline"></span>
+            <br>
+            <span class="text">Like Video</span>
+        </div>
+        <div class="border  dp-none dp-block"></div>
+
+        <h3 class="dp-none dp-block"> Subscription</h3>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-youtube-subscription"></span>
+            <br>
+            <span class="text">f8-1</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-facebook"></span>
+            <br>
+            <span class="text">f8-2</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-facebook"></span>
+            <br>
+            <span class="text">f8-3</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-facebook"></span>
+            <br>
+            <span class="text">f8-4</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-facebook"></span>
+            <br>
+            <span class="text">f8-5</span>
+        </div>
+
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-menu"></span>
+            <br>
+            <span class="text">All Subscription
+            </span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-menu-down"></span>
+            <br>
+            <span class="text">Show more</span>
+        </div>
+        <div class="border  dp-none dp-block"></div>
+
+        <h3 class="dp-none dp-block">Explore</h3>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-fire"></span>
+            <br>
+            <span class="text">Trending</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-music"></span>
+            <br>
+            <span class="text">Music</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-youtube-gaming"></span>
+            <br>
+            <span class="text">Gaming</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-newspaper"></span>
+            <br>
+            <span class="text">New</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-trophy"></span>
+            <br>
+            <span class="text">Sport</span>
+        </div>
+        <div class="border  dp-none dp-block"></div>
+
+        <h3 class="dp-none dp-block">More Youtube</h3>
+
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-youtube red-color"></span>
+            <br>
+            <span class="text">Youtube prime</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-youtube red-color"></span>
+            <br>
+            <span class="text">Youtube studio</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-youtube red-color"></span>
+            <br>
+            <span class="text">Youtube music</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-youtube red-color"></span>
+            <br>
+            <span class="text">Youtube kids</span>
+        </div>
+        <div class="border  dp-none dp-block"></div>
+
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-youtube-studio "></span>
+            <br>
+            <span class="text">Seting</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-flag"></span>
+            <br>
+            <span class="text">Repost History</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-help-circle"></span>
+            <br>
+            <span class="text">help</span>
+        </div>
+        <div class="side-bar-items hover dp-none menu-flex">
+            <span class="mdi mdi-message-alert"></span>
+            <br>
+            <span class="text">Send feedback</span>
+        </div>
+    </div>
+    <div class="body-video  dp-flex mobie-block">
+        <div class="video-youtube ">
+            <div class="">
+
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/3mpWIQ6Eu8M" title="Thử Thách Giải Đề Hồ Chí Minh Môn Toán Thi Vào 10 Trong Thời Gian Thật" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h3>Thử Thách Giải Đề Hồ Chí Minh Môn Toán Thi Vào 10 Trong Thời Gian Thật</h3>
+            <div class="admin-video ">
+                <div class="logo-admin dp-flex">
+                    <img src="https://yt3.googleusercontent.com/un_M2eNgOj9MM1SXW6fMgcw7E3U2Rxb7ZdeEedWX2mU19uDJAUG_C2w0Omfq01_b9_YeOd9wkw0=s160-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                    <div class="title-admin">
+                        <h4>Dung lai lap trinh</h4>
+                        <span>416 n nguoi dang ky</span>
+                    </div>
+                    <button>dang ky</button>
+                    <div class="like-admin dp-flex">
+                        <div class="like">
+                            <button><span class="mdi"></span>34 N like</button>
+                            <button><span class="mdi"></span>1 N dislike</button>
+                        </div>
+                        <div class="share"> Share</div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="about">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsa dignissimos vitae adipisci sed modi velit libero ea, fuga exercitationem doloremque corrupti, non totam, fugit reiciendis. Ipsam minima eveniet reprehenderit.
+            </div>
+        </div>
+        <div class="video-product">
+            <div class="video-items ">
+              
+                    <a href="video.html" class="dp-flex">
+                        <div class="product-logo">
+                            <iframe 
+                                src="https://www.youtube.com/embed/aqjgj175OLA?autoplay=1&mute=1" frameborder="0"
+                                allow="autoplay; encrypted-media">
+                            </iframe>
+
+
+
+
+                        </div>
+                        <div class="product-title dp-flex">
+                        
+                            <div class="product-view">
+                                <h3>Hà Nội Thay Đổi Đề Thi Toán Vào 10 | Chương Trình Đổi Mới 2025</h3>
+<br>
+                                <span>dung lai lap trinh </span> <br>
+                                <span>6.676.008 view</span>
+                            </div>
+
+                        </div>
+                    </a>
+
+                
+            </div>
+            <div class="video-items ">
+              
+                <a href="video.html" class="dp-flex">
+                    <div class="product-logo">
+                        <iframe 
+                            src="https://www.youtube.com/embed/aqjgj175OLA?autoplay=1&mute=1" frameborder="0"
+                            allow="autoplay; encrypted-media">
+                        </iframe>
+
+
+
+
+                    </div>
+                    <div class="product-title dp-flex">
+                    
+                        <div class="product-view">
+                            <h3>Hà Nội Thay Đổi Đề Thi Toán Vào 10 | Chương Trình Đổi Mới 2025</h3>
+<br>
+                            <span>dung lai lap trinh </span> <br>
+                            <span>6.676.008 view</span>
+                        </div>
+
+                    </div>
+                </a>
+
+            
+        </div>
+        <div class="video-items ">
+              
+            <a href="video.html" class="dp-flex">
+                <div class="product-logo">
+                    <iframe 
+                        src="https://www.youtube.com/embed/aqjgj175OLA?autoplay=1&mute=1" frameborder="0"
+                        allow="autoplay; encrypted-media">
+                    </iframe>
+
+
+
+
+                </div>
+                <div class="product-title dp-flex">
+                
+                    <div class="product-view">
+                        <h3>Hà Nội Thay Đổi Đề Thi Toán Vào 10 | Chương Trình Đổi Mới 2025</h3>
+<br>
+                        <span>dung lai lap trinh </span> <br>
+                        <span>6.676.008 view</span>
+                    </div>
+
+                </div>
+            </a>
+
+        
+    </div>
+    <div class="video-items ">
+              
+        <a href="video.html" class="dp-flex">
+            <div class="product-logo">
+                <iframe 
+                    src="https://www.youtube.com/embed/aqjgj175OLA?autoplay=1&mute=1" frameborder="0"
+                    allow="autoplay; encrypted-media">
+                </iframe>
+
+
+
+
+            </div>
+            <div class="product-title dp-flex">
+            
+                <div class="product-view">
+                    <h3>Hà Nội Thay Đổi Đề Thi Toán Vào 10 | Chương Trình Đổi Mới 2025</h3>
+<br>
+                    <span>dung lai lap trinh </span> <br>
+                    <span>6.676.008 view</span>
+                </div>
+
+            </div>
+        </a>
+
+    
+</div>
+<div class="video-items ">
+              
+    <a href="video.html" class="dp-flex">
+        <div class="product-logo">
+            <iframe 
+                src="https://www.youtube.com/embed/aqjgj175OLA?autoplay=1&mute=1" frameborder="0"
+                allow="autoplay; encrypted-media">
+            </iframe>
+
+
+
+
+        </div>
+        <div class="product-title dp-flex">
+        
+            <div class="product-view">
+                <h3>Hà Nội Thay Đổi Đề Thi Toán Vào 10 | Chương Trình Đổi Mới 2025</h3>
+<br>
+                <span>dung lai lap trinh </span> <br>
+                <span>6.676.008 view</span>
+            </div>
+
+        </div>
+    </a>
+
+
+</div>
+<div class="video-items ">
+              
+    <a href="video.html" class="dp-flex">
+        <div class="product-logo">
+            <iframe 
+                src="https://www.youtube.com/embed/aqjgj175OLA?autoplay=1&mute=1" frameborder="0"
+                allow="autoplay; encrypted-media">
+            </iframe>
+
+
+
+
+        </div>
+        <div class="product-title dp-flex">
+        
+            <div class="product-view">
+                <h3>Hà Nội Thay Đổi Đề Thi Toán Vào 10 | Chương Trình Đổi Mới 2025</h3>
+<br>
+                <span>dung lai lap trinh </span> <br>
+                <span>6.676.008 view</span>
+            </div>
+
+        </div>
+    </a>
+
+
+</div>
+<div class="video-items ">
+              
+    <a href="video.html" class="dp-flex">
+        <div class="product-logo">
+            <iframe 
+                src="https://www.youtube.com/embed/aqjgj175OLA?autoplay=1&mute=1" frameborder="0"
+                allow="autoplay; encrypted-media">
+            </iframe>
+
+
+
+
+        </div>
+        <div class="product-title dp-flex">
+        
+            <div class="product-view">
+                <h3>Hà Nội Thay Đổi Đề Thi Toán Vào 10 | Chương Trình Đổi Mới 2025</h3>
+<br>
+                <span>dung lai lap trinh </span> <br>
+                <span>6.676.008 view</span>
+            </div>
+
+        </div>
+    </a>
+
+
+</div>
+        </div>
+    </div>
+</body>
+</html>
