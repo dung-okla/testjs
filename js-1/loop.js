@@ -13,7 +13,7 @@
       │    ▼                                        │        
       │   for                                       │        
       │     ┌──────────────────────────────────┐    │        
-      │     │─var j=i+1    ; j<arr.length-1;j++│    │        
+      │     │─var j=i+1    ; j<arr.length;j++│    │        
       │     │       var tml =arr[i]            │    │        
       │     │    arr[i] < arr[j]               │    │        
       │     │           │                      │    │        
@@ -32,7 +32,7 @@
 var arr = [2, 3, 4, 1, 0, 8] ;
 
 for(var i=0; i<arr.length;i++) {
-for(var j=i+1    ; j<arr.length-1;j++){
+for(var j=i+1    ; j<arr.length;j++){
    var tml=arr[i];
    if(  arr[i] > arr[j]){
                       
