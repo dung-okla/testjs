@@ -121,21 +121,21 @@ function findCommonAgesAndName(arr1, arr2){
     let myarr={}
     for (let index = 0; index < arr.length; index++) {      
 
-         if(myarr[`tên ${arr[index].name}`]){       
-            if(myarr[`tên ${arr[index].name}`].length >=2){
+         if(myarr[`tên ${arr[index].name}`]){    
+            myarr[`tên ${arr[index].name}`].push(arr[index])   
+            let age =myarr[`tên ${arr[index].name}`]
+            if(age.length >=2){
 
-                for(let i =0;i<myarr[`tên ${arr[index].name}`].length ;i++){
-                    if( myarr[`tên ${arr[index].name}và tuổi ${arr[index].age} trùng nhau`]){
-                        myarr[`tên ${arr[index].name}và tuổi ${arr[index].age} trùng nhau`].push(myarr[`tên ${arr[index].name}`][i])
+                for(let i =0;i<age.length ;i++){
+                    if( myarr[`tên ${age[i].name}và tuổi ${age[i].age} trùng nhau`]){
+                        myarr[`tên ${age[i].name}và tuổi ${age[i].age} trùng nhau`].push(age[i])
                     }
                     else{
-                        myarr[`tên ${arr[index].name}và tuổi ${arr[index].age} trùng nhau`]=[myarr[`tên ${arr[index].name}`][i]]
+                        myarr[`tên ${age[i].name}và tuổi ${age[i].age} trùng nhau`]=[age[i]]
                     }
                 }
-            }
-            myarr[`tên ${arr[index].name}`].push(arr[index])
+            }          
          }else{
-        
             myarr[`tên ${arr[index].name}`]=[arr[index]]
          }             
     }
