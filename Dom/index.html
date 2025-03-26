@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+
+<body>
+<div id="math"></div>
+<div id="resull">0</div>
+<button  onclick="numberme(this)">1</button>
+<button   onclick="numberme(this)">2</button>
+<button  onclick="numberme(this)">3</button><button onclick="math(this)">+</button><button onclick="math(this)">x</button><br>
+<button  onclick="numberme(this)">4</button>
+<button  onclick="numberme(this)">5</button>
+<button  onclick="numberme(this)">6</button><button onclick="math(this)">-</button><button onclick="math(this)">/</button><br>
+<button  onclick="numberme(this)">7</button>
+<button  onclick="numberme(this)">8</button>
+<button  onclick="numberme(this)">9</button><button  onclick="numberme(this)">0</button >
+    <button id="btn" onclick="kq()">=</button>
+    <script>
+        let a,b,maths
+   function numberme(e){
+       a = document.getElementById('resull').innerText += e.innerText
+       document.getElementById('resull').innerText =Number(a)
+       a=Number(a)
+       console.log(a)
+   } 
+function math(e){
+    b=a;
+    maths = e.innerText
+    console.log(maths)
+    document.getElementById('math').innerText=a+e.innerText;
+    document.getElementById('resull').innerText =0
+    a=0
+}
+
+function kq(){
+ switch(maths){
+    case "+":
+    document.getElementById('resull').innerText=a+b;
+    break;
+    case "-":
+    document.getElementById('resull').innerText=b-a;
+    break
+    case "x":
+    document.getElementById('resull').innerText=bxa;
+    break
+    case "/":
+    document.getElementById('resull').innerText=b/a;
+    break
+
+    
+
+ }
+ document.getElementById('math').innerText=""
+
+}
+
+    </script>
+</body>
+
+</html>
