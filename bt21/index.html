@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="side-bar">
+            <header class="side-bar__header">
+                <span class="mdi mdi-stack-overflow logo"></span>
+                <h1>F8 Admin</h1>
+            </header>
+
+            <div class="side-bar__item">
+                <span>Menu</span>
+            </div>
+ 
+        </div>
+
+        <div class="body-container">
+            <h2 style="text-align: center">Members</h2>
+            <div class="table">
+                <div class="table-header">
+
+                <div class="table-header__cell">Name</div>
+                <div class="table-header__cell">Mail</div>
+                <div class="table-header__cell">Action</div> -->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="overlay dp-none">
+            <div class="dialog">
+                <div class="dialog__header">
+                    <div class="dialog__header__title">New member</div>
+                    <div class="dialog__header__icon">&times</div>
+                </div>
+                <div class="dialog__body">
+                    <div class="dialog__body__input">
+                        <input type="text" />
+                        <span>Skill</span>
+                        <span class="icon">v</span>
+                        <div class="dropdown">
+                            <div class="dropdown__item">Python</div>
+                            <div class="dropdown__item">JS</div>
+                        </div>
+                    </div>
+
+                    <div class="dialog__body__input">
+                        <input type="text" />
+                        <span>Name</span>
+                    </div>
+                    <div class="dialog__body__input">
+                        <input type="text" />
+                        <span>Email</span>
+                    </div>
+                </div>
+                <div class="dialog__action">
+                    <button onclick="none()">Close</button>
+                    <button onclick="none()">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const sidebars = [
+                { class: 'mdi mdi-account', text: 'Quản Lý Đơn Hàng' },
+                {
+                    class: 'mdi mdi-account', text: 'Quản Lý Xe', child: [
+                        { class: 'mdi mdi-account', text: 'Quản Lý Xe may' },
+                        { class: 'mdi mdi-account', text: 'Quản Lý Xe hoi' },
+
+                    ]
+                },
+                { class: 'mdi mdi-account', text: 'Quản Lý Dịch Vụ' },
+                { class: 'mdi mdi-account', text: 'Cài Đặt Khác' },
+            ]
+            let sidebarBody = document.querySelector('.side-bar');
+            sidebars.forEach((sidebar, i) => {
+                if (sidebar.child) {
+                    let body = `<div class="side-bar__item">
+         
+         <div>
+             <label for="toggle">
+                 <span ></span>
+                 <span>${sidebar.text}</span>
+             </label>
+             <span class="mdi mdi-chevron-down"></span>
+         </div>
+      
+         <div>
+             <input id="toggle" type="checkbox" hidden="hidden">
+             <div class="side-bar__item__child"> 
+ </div></div>
+         </div>`
+                    sidebarBody.innerHTML += body
+                    let logo = document.querySelector(`.side-bar .side-bar__item:nth-of-type(${2 + i})>div span:first-child`)
+                    logo.setAttribute('class', sidebar.class)
+                    console.log(document.querySelector(`.side-bar .side-bar__item:nth-of-type(${2 + i})>div>div:last-child`).innerHTML += ``)
+                    let child = document.querySelector(`.side-bar .side-bar__item:nth-of-type(${2 + i})>div>div:last-child`)
+                    let arr = sidebar.child
+                    console.log(arr)
+                    arr.forEach((c, index) => {
+                        let item = ` 
+                    <div class="side-bar__item__child_item">
+                        <span ></span>
+                        <span>${c.text}</span>`
+                        item += `</div>`
+                        child.innerHTML += item
+                        let logoChild= document.querySelector(`.side-bar .side-bar__item:nth-of-type(${2 + i}) .side-bar__item__child_item:nth-of-type(${index+1})>span:first-child`)
+                    logoChild.setAttribute('class',c.class) 
+                    })
+                  
+                } else {
+                    sidebarBody.innerHTML += ` <div class="side-bar__item">
+            <span ></span>
+            <span>${sidebar.text}</span>
+        </div>`
+                    let logo = document.querySelector(`.side-bar .side-bar__item:nth-of-type(${2 + i})>span:first-child`)
+                    logo.setAttribute('class', sidebar.class)
+                }
+
+            })
+
+            let header = document.querySelector('.table-header')
+
+            let table = document.querySelector('.table')
+            const members = [
+                {
+                    Id: '1', Name: 'Tran Van A', Mail: 'a@test.con', Action: ` <div class="table-body__cell">
+                    <button class="edit-btn" onclick='noNone()' >
+                        <span class="mdi mdi-pencil" ></span>
+                        edit
+                    </button>
+                    <button class="del-btn">
+                        <span class="mdi mdi-trash-can-outline"></span>
+                        delete
+                    </button>
+                </div>`},
+                {
+                    Id: '1', Name: 'Tran Van A', Mail: 'a@test.con', Action: ` <div class="table-body__cell">
+                    <button class="edit-btn " onclick='noNone()'>
+                        <span class="mdi mdi-pencil" ></span>
+                        edit
+                    </button>
+                    <button class="del-btn">
+                        <span class="mdi mdi-trash-can-outline"></span>
+                        delete
+                    </button>
+                </div>`},
+                {
+                    Id: '1', Name: 'Tran Van A', Mail: 'a@test.con', Action: ` <div class="table-body__cell">
+                    <button class="edit-btn " onclick='noNone()'>
+                        <span class="mdi mdi-pencil"></span>
+                        edit
+                    </button>
+                    <button class="del-btn">
+                        <span class="mdi mdi-trash-can-outline"></span>
+                        delete
+                    </button>
+                </div>`},
+            ]
+            const keys = Object.keys(members[0]);
+            members.forEach((member, i) => {
+                let body = '  <div class="table-body">'
+                keys.forEach(key => {
+                    if (i === 0) header.innerHTML += ` <div class="table-header__cell">${key}</div>`
+                    body += `<div class="table-body__cell">${member[key]}</div>`
+                })
+                body += '</div>'
+                table.innerHTML += body
+
+
+            })
+function none(){
+    document.querySelector('.overlay').setAttribute('class','overlay dp-none')
+}
+function noNone(){
+    document.querySelector('.overlay').setAttribute('class','overlay')
+}
+            
+
+        </script>
+</body>
+
+</html>

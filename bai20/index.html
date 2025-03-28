@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #calc{
+            border: 1px solid #ccc;
+            width: 400px;
+            height: 800px;
+        }
+        #screen{
+            border: 1px solid #ccc;
+            width: 380px;
+            height: 100px;
+            margin: 10px auto;
+        }
+        #keyboard{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+        .btn{
+            background-color: #ccc;
+            height: 50px;
+            width: 50px;
+            flex-basis: calc(25% - 10px);
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="calc">
+        <div id="screen"></div>
+        <div id="keyboard">
+            <!-- <div class="btn">1</div>
+            <div class="btn">2</div>
+            <div class="btn">3</div>
+            <div class="btn">+</div>
+            <div class="btn">4</div>
+            <div class="btn">5</div>
+            <div class="btn">6</div>
+            <div class="btn">-</div>
+            <div class="btn">7</div>
+            <div class="btn">8</div>
+            <div class="btn">9</div>
+            <div class="btn">x</div>
+            <div class="btn">AC</div>
+            <div class="btn">0</div>
+            <div class="btn">=</div>
+            <div class="btn">/</div> -->
+        </div>
+    </div>
+    <script>
+        const btnContent = [
+        { tex: 'One', value: 1 },
+            { tex: 'Two', value: 2 },
+            { tex: 'Three', value: 3 },
+            { tex: 'Plus', value: '+' },
+            { tex: 'Four', value: 4 },
+            { tex: 'Five', value: 5 },
+            { tex: 'Six', value: 6 },
+            { tex: 'Minus', value: '-' },
+            { tex: 'Seven', value: 7 },
+            { tex: 'Eight', value: 8 },
+            { tex: 'Nine', value: 9 },
+            { tex: 'Times', value: '*' },
+            { tex: 'AC', value: 'AC' },
+            { tex: 'Zero', value: 0 },
+            { tex: 'Equals', value: '=' },
+            { tex: 'Divide', value: '/' }
+        ]
+        btnContent.forEach(btn =>{
+            document.getElementById('keyboard').innerHTML+=`  <div class="btn"></div>  `
+        })
+        
+        let btns =Array.from( document.getElementsByClassName('btn') )
+        btns.forEach(e => {
+            e.onclick= ()=>{
+                const text = e.innerText
+                console.log(text)
+            }
+        });
+    </script>
+</body>
+</html>
