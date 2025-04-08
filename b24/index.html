@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+        body{
+            align-items: center;
+          justify-content: center;
+            display: flex;
+            background-color: #8758ff;
+        }
+        .app{
+            margin-top: 80px;
+            background-color: #1a1a40;
+            padding: 32px;
+        }
+        h1{
+            color: #fff;
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+        }
+        input{
+            background: none;
+    border: 1px solid #8758ff;
+    color: #fff;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    outline: none;
+    padding: .5rem 1rem;
+    width: 300px;
+        }
+        button{
+            background: #8758ff;
+    color: #fff;
+    cursor: pointer;  
+      border: none;
+    padding: .55rem;
+        }
+        .todo{
+            background: #8758ff;
+            color: black;
+            align-items: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: .75rem 1rem;
+        }
+        img{
+            width: 16px;
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="app">
+            <h1>Get Things Done !</h1>
+            <form class="todoForm" >
+                <input type="text" name="task" id="task" placeholder="What is task today">
+                <button type="submit">Add Task</button>
+            </form>
+          
+        </div>
+    </div>
+    <script>
+         
+        const todoForm = document.querySelector('.todoForm');
+       
+
+        todoForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let text = document.querySelector('input')
+        let todo = document.querySelector('.app')
+            let a = text.value;
+            if(a === '') return
+            todo.innerHTML+=` <div class="todo">
+                <p>${a}</p>
+                <div class="action">
+                    <img src="pen.svg" alt="">
+                    <img src="trash.svg" alt="">
+                </div>`
+                text.value = '';
+        let list = document.querySelectorAll('.todo')
+console.log(Array.from(list))
+                
+        });
+    </script>
+</body>
+</html>
