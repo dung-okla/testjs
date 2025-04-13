@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: Poppins, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                background-color: #8758ff;
+            }
+            .app {
+                margin-top: 80px;
+                background-color: #1a1a40;
+                padding: 32px;
+            }
+           .todoList{
+            background-color:#1a1a40 ;
+           }
+            h1 {
+                color: #fff;
+                font-size: 1.75rem;
+                margin-bottom: 0.5rem;
+            }
+            input {
+                height: 50px;
+                background: none;
+                border: 1px solid #8758ff;
+                color: #fff;
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+                outline: none;
+                padding: 0.5rem 1rem;
+                width: 300px;
+            }
+            button {
+                height: 50px;
+                background: #8758ff;
+                color: #fff;
+                cursor: pointer;
+                border: none;
+                padding: 0.55rem;
+            }
+            .todo {
+                background: #8758ff;
+                color: black;
+                align-items: center;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                padding: 0.75rem 1rem;
+            }
+            img {
+                width: 16px;
+                height: 16px;
+            }
+            .item{
+                width: 300px;
+                height: 50px;
+                background: none;
+                border: 1px solid #8758ff;
+            }
+            .todoFormItem{
+                height: 50px;
+                background-color:#1a1a40 ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="root">
+            <div class="app">
+                <h1>Get Things Done !</h1>
+                <div class="todoForm">
+                    <input
+                        type="text"
+                        name="task"
+                        id="task"
+                        placeholder="What is task today"
+                    />
+                    <button id="save" name="save">Add Task</button>
+                </div>
+                <div class="todoList"></div>
+            </div>
+        </div>
+        <script src="main.js" type="module"></script>
+    </body>
+</html>
