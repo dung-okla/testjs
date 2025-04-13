@@ -1,0 +1,23 @@
+{
+    "job":[
+       {
+        "id":1,
+        "name":"job1"
+       } ,
+       {
+        "id":2,
+        "name":"job2"
+       } 
+    ]
+    ,
+    "memeber":[
+        {
+         "id":1,
+         "name":"test1"
+        } ,
+        {
+         "id":2,
+         "name":"test2"
+        } 
+     ]
+}
